@@ -67,3 +67,13 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+# CSA Guzzle Configuration
+csa_guzzle:
+    clients:
+        github_api:
+            config:
+                base_uri: https://api.github.com
+                timeout: 2.0
+                headers:
+                    Accept: application/vnd.github.v3+json

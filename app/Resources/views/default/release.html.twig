@@ -1,0 +1,23 @@
+{% extends 'layout.html.twig' %}
+
+{% block contents %}
+<div id="welcome">
+    <h1><span>The last release of</span> Tolerance</h1>
+</div>
+
+<div id="status">
+    <p>
+        Name: <strong>{{ release.name }}</strong>
+        <br />
+        Tag: <code>{{ release.tag_name }}</code>
+    </p>
+    <pre>{{ release.body }}</pre>
+</div>
+
+<div id="next">
+    <h2>What's next?</h2>
+    <p>
+        <a href="{{ path('home') }}">Back to home</a>
+    </p>
+</div>
+{% endblock %}

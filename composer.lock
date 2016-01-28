@@ -4,9 +4,69 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9907859ab1e1ffd3922aa5432334f2b7",
-    "content-hash": "01c09bd1055d6d4e5d270065f8247edc",
+    "hash": "e0e8dbf534e6e32a7e90ee9d7e5d102a",
+    "content-hash": "af62400fde2e8bbed34f5e4382fcc2ac",
     "packages": [
+        {
+            "name": "csa/guzzle-bundle",
+            "version": "v2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/csarrazi/CsaGuzzleBundle.git",
+                "reference": "e174ab8593a69e9fba9e7b5c50c92f9ebfba018a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/csarrazi/CsaGuzzleBundle/zipball/e174ab8593a69e9fba9e7b5c50c92f9ebfba018a",
+                "reference": "e174ab8593a69e9fba9e7b5c50c92f9ebfba018a",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.1",
+                "php": ">=5.5.0",
+                "symfony/dependency-injection": "^2.6|^3.0",
+                "symfony/expression-language": "^2.6|^3.0",
+                "symfony/framework-bundle": "^2.6|^3.0",
+                "twig/twig": "^1.12|^2.0"
+            },
+            "conflict": {
+                "guzzlehttp/command": "*",
+                "guzzlehttp/guzzle-services": "*"
+            },
+            "require-dev": {
+                "doctrine/cache": "^1.1",
+                "phpunit/phpunit": "^4.8",
+                "symfony/filesystem": "^2.3",
+                "symfony/phpunit-bridge": "^2.7|^3.0",
+                "symfony/web-profiler-bundle": "^2.3"
+            },
+            "suggest": {
+                "doctrine/cache": "Allows caching of responses"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Csa\\Bundle\\GuzzleBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Charles Sarrazin",
+                    "email": "charles@sarraz.in"
+                }
+            ],
+            "description": "A bundle integrating GuzzleHttp >= 4.0",
+            "time": "2016-01-21 13:02:59"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
@@ -773,6 +833,177 @@
             "time": "2015-12-25 15:50:05"
         },
         {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "~1.0",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.1-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2015-11-23 00:47:50"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2015-10-15 22:28:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5d04bdd2881ac89abde1fb78cc234bce24327bb",
+                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2016-01-23 01:23:02"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.2",
             "source": {
@@ -999,6 +1230,55 @@
             "time": "2015-12-10 14:48:13"
         },
         {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -1035,6 +1315,76 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "ramsey/uuid",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "3cc2dd253e296ce05f99635b2f633048adfbaa96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/3cc2dd253e296ce05f99635b2f633048adfbaa96",
+                "reference": "3cc2dd253e296ce05f99635b2f633048adfbaa96",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "replace": {
+                "rhumsaa/uuid": "self.version"
+            },
+            "require-dev": {
+                "apigen/apigen": "^4.1",
+                "ircmaxell/random-lib": "^1.1",
+                "jakub-onderka/php-parallel-lint": "^0.9.0",
+                "moontoast/math": "^1.1",
+                "phpunit/phpunit": "^4.7",
+                "satooshi/php-coveralls": "^0.6.1",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "suggest": {
+                "ext-uuid": "Provides the PECL UUID extension for use with the PeclUuidTimeGenerator and PeclUuidRandomGenerator",
+                "ircmaxell/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
+                "moontoast/math": "Provides support for converting UUID to 128-bit integer (in string form).",
+                "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
+                "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ramsey\\Uuid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marijn Huizendveld",
+                    "email": "marijn.huizendveld@gmail.com"
+                },
+                {
+                    "name": "Thibaud Fabre",
+                    "email": "thibaud@aztech.io"
+                },
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                }
+            ],
+            "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
+            "homepage": "https://github.com/ramsey/uuid",
+            "keywords": [
+                "guid",
+                "identifier",
+                "uuid"
+            ],
+            "time": "2015-12-17 15:21:44"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -1186,6 +1536,45 @@
             ],
             "description": "A security checker for your composer.lock",
             "time": "2015-11-07 08:07:40"
+        },
+        {
+            "name": "sroze/tolerance",
+            "version": "dev-message-profile",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sroze/Tolerance.git",
+                "reference": "133dd64e11c9cbfeb75dd9c628d09d319a1a1002"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sroze/Tolerance/zipball/133dd64e11c9cbfeb75dd9c628d09d319a1a1002",
+                "reference": "133dd64e11c9cbfeb75dd9c628d09d319a1a1002",
+                "shasum": ""
+            },
+            "require": {
+                "ramsey/uuid": "^3.1"
+            },
+            "require-dev": {
+                "behat/behat": "~3.1.0rc1",
+                "behat/symfony2-extension": "^2.1",
+                "csa/guzzle-bundle": "~2.0@dev",
+                "jms/aop-bundle": "^1.2",
+                "phpspec/phpspec": "~2.0",
+                "phpunit/phpunit": "^5.1",
+                "ruflin/elastica": "^3.0",
+                "symfony/symfony": "~2.8|~3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tolerance\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2016-01-28 16:23:51"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1939,7 +2328,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "sroze/tolerance": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
