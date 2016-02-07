@@ -1,9 +1,19 @@
-# Learn more about services, parameters and containers at
-# http://symfony.com/doc/current/book/service_container.html
-parameters:
-#    parameter_name: value
-
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    app.neo4j.client_builder:
+        class:   Neoxygen\NeoClient\ClientBuilder
+        factory: [Neoxygen\NeoClient\ClientBuilder, create]
+        calls:
+            -
+                - addConnection
+                -
+                    - 'default'
+                    - 'http'
+                    - %neo4j_host%
+                    - %neo4j_port%
+                    - true
+                    - %neo4j_username%
+                    - %neo4j_password%
+
+    app.neo4j.client:
+        class: Neoxygen\NeoClient\Client
+        factory: ["@app.neo4j.client_builder", build]
