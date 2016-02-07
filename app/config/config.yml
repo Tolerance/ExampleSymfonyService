@@ -70,6 +70,7 @@ swiftmailer:
 
 # CSA Guzzle Configuration
 csa_guzzle:
+    profiler: %kernel.debug%
     clients:
         github_api:
             config:
@@ -77,12 +78,12 @@ csa_guzzle:
                 timeout: 2.0
                 headers:
                     Accept: application/vnd.github.v3+json
+        internal: ~
 
 # Tolerance configuration
 tolerance:
     message_profile:
         current_peer:
-            service: ExampleSymfony
             environment: %kernel.environment%
 
         storage:

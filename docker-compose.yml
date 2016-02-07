@@ -1,4 +1,16 @@
-app:
+service1:
+    build: .
+    volumes:
+        - .:/app
+    links:
+        - neo4j
+        - service2
+    expose:
+        - 80
+    environment:
+        TOLERANCE_SERVICE_NAME: "First Service"
+
+service2:
     build: .
     volumes:
         - .:/app
@@ -6,6 +18,8 @@ app:
         - neo4j
     expose:
         - 80
+    environment:
+        TOLERANCE_SERVICE_NAME: "Second Service"
+
 neo4j:
     image: neo4j
-

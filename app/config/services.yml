@@ -17,3 +17,8 @@ services:
     app.neo4j.client:
         class: Neoxygen\NeoClient\Client
         factory: ["@app.neo4j.client_builder", build]
+
+    app.tolerance.current_peer_enhancer:
+        class: App\Tolerance\CurrentPeerEnhancer
+        decorates: tolerance.message_profile.peer.resolver.current
+        arguments: ["@app.tolerance.current_peer_enhancer.inner"]
