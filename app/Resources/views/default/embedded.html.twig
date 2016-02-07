@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% block contents %}
+<div id="welcome">
+    <h1><span>Embeded version</span> {{ service }} @ {{ page }}</h1>
+</div>
+
+<pre style="border: 1px solid #333;">{{ contents }}</pre>
+
+<div id="next">
+    <h2>What's next?</h2>
+    <p>
+        <a href="{{ path('home') }}">Back to home</a>
+    </p>
+</div>
+{% endblock %}

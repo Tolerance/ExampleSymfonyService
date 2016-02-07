@@ -18,6 +18,10 @@
             <strong>Call an API</strong>
             <a href="{{ path('last_release') }}">Get the last Tolerance release</a>
         </li>
+        <li>
+            <strong>Embedded page</strong>
+            <a href="{{ path('embedded', {'service': 'service2', 'page': 'last-release'}) }}">Displayed page <code>/last-release</code> of service <code>service2</code></a>
+        </li>
     </ul>
 </div>
 {% endblock %}
