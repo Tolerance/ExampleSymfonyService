@@ -22,7 +22,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "csa/guzzle-bundle": "^2.0",
-        "sroze/tolerance": "dev-message-profile",
+        "sroze/tolerance": "^0.3",
         "friendsofsymfony/elastica-bundle": "3.2.x-dev",
         "jms/serializer-bundle": "^1.1",
         "graphaware/neo4j-php-client": "^3.3",
