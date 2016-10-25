@@ -19,3 +19,5 @@ parameters:
     neo4j_port: 7474
     neo4j_username: neo4j
     neo4j_password: neo4j
+
+    zipkin_base_url: http://1.2.3.4:9411

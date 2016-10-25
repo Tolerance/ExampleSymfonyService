@@ -82,9 +82,7 @@ csa_guzzle:
 
 # Tolerance configuration
 tolerance:
-    message_profile:
-        current_peer:
-            environment: %kernel.environment%
-
-        storage:
-            neo4j: app.neo4j.client
+    tracer:
+        zipkin:
+            http:
+                base_url: %zipkin_base_url%
